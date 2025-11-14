@@ -1,0 +1,8 @@
+{
+  "name": "VCENK Tools GOD4 Meta-Chaos Full",
+  "short_name": "vcenk-god4-full",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

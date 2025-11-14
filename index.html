@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VCENK Tools — GOD⁴ Meta-Chaos (Full)</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <div class="brand">VCENK Tools <span class="tag">GOD⁴ • Meta‑Chaos</span></div>
+      <div class="meta">Upgraded — full predictor, ARP, dashboard</div>
+    </header>
+
+    <main>
+      <section class="left">
+        <label>Recent winners (comma separated)</label>
+        <textarea id="history" placeholder="e.g. 3,2,2,3,1,2,3,1,3,3"></textarea>
+        <div class="controls">
+          <button id="btnLoad" class="btn primary">Load</button>
+          <button id="btnStart" class="btn">Start</button>
+          <button id="btnStop" class="btn ghost">Stop</button>
+        </div>
+        <div class="params">
+          <label>Ensembles <input id="ensembles" type="number" value="8" min="1" max="60"></label>
+          <label>Simulations <input id="simCount" type="number" value="1200" min="100" max="5000"></label>
+          <label>Horizon <input id="horizon" type="number" value="6" min="1" max="50"></label>
+        </div>
+        <div class="notes">Tip: gunakan 100+ ronde history dan jalankan di desktop untuk hasil terbaik.</div>
+      </section>
+
+      <section class="right">
+        <div id="summary" class="summary">Tidak ada prediksi.</div>
+        <div class="dash">
+          <div class="chart-card"><canvas id="probChart"></canvas></div>
+          <div class="chart-card"><canvas id="forecastBar"></canvas></div>
+          <div class="chart-card full"><canvas id="trendChart"></canvas></div>
+          <div class="chart-card small"><canvas id="confGauge"></canvas></div>
+        </div>
+        <div id="details" class="details">(diagnostics)</div>
+      </section>
+    </main>
+
+    <footer>Generated: 2025-11-14 12:05 UTC</footer>
+  </div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
